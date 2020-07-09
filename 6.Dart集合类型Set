@@ -1,0 +1,19 @@
+/**
+ * Set
+ * 用它最主要功能是去除数组重复内容
+ * Set是没有顺序且不能重复的集合，所以不能通过索引去取值
+ */
+void main () {
+  Set s=new Set();
+  s.add("a");
+  s.add("b");
+  print(s);
+  List lis=s.toList();
+  print(lis);
+  s.addAll([2,3,3]);  // 返回去重后的数据
+  print(s);
+
+  s.forEach((value){
+    print(value);
+  });
+}

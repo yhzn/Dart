@@ -43,8 +43,64 @@ void main () {
 
   // ?? 运算符
 
+  String sex="1";
+  switch(sex){
+    case "1":
+      print("男");
+      break;
+    default:
+      print("女");
+      break;
+  };
 
+  bool flag=true;
+  String sm=flag?"真的":"假的";
+  print(sm);
 
+ int f;
+ int g=f??10;
+ print(g);
 
+ int h=20;
+ int k=h??10;
+ print(k);
+
+ /*
+ * 类型转换
+ *
+ * 1、Number与String类型转换
+ *    toString()     parse()
+ *
+ * 2、其他类型转换成Booleans类型
+ *    isEmpty：判断字符串是否为空
+ *
+ *
+ *
+ * */
+
+  String str="123";
+  String str1="123.23";
+  int pNum=int.parse(str);
+  double pNum1=double.parse(str1);
+  print(pNum1);
+  print(pNum is int);
+  String toStr=pNum.toString();
+
+  try{
+
+  }catch(err){
+
+  };
+
+  if(str.isEmpty){
+    print("字符串为空");
+  }else{
+    print("字符串不为空");
+  }
+
+  var v=0/0;
+  if(v.isNaN){
+    print("NaN");
+  }
 
 }
