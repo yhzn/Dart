@@ -1,0 +1,4 @@
+name: flutterdemo
+description: A new Flutter application
+dependencies:
+  http: ^0.12.1
